@@ -25,11 +25,15 @@ export const getImagePositionClass = (imagePath: string): string => {
   
   const filename = imagePath.split('/').pop()?.toLowerCase() || '';
   
-  // Imágenes que necesitan posicionamiento hacia arriba
+  // Imágenes que necesitan posicionamiento centro-superior personalizado
   if (filename.includes('clemont-beige') || 
-      filename.includes('clemont-negro-blanco') || 
-      filename.includes('clemont-negro-rojo-blanco')) {
-    return 'object-top';
+      filename.includes('clemont-negro-blanco')) {
+    return 'object-[center_30%]';
+  }
+  
+  // Clemont negro-rojo-blanco necesita posicionamiento ligeramente superior
+  if (filename.includes('clemont-negro-rojo-blanco')) {
+    return 'object-[center_35%]';
   }
   
   // Imágenes que necesitan posicionamiento más hacia el centro-arriba
