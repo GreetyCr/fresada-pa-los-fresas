@@ -13,11 +13,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ gorra }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden group">
       {/* Product Image */}
-      <div className="relative aspect-square bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 overflow-hidden">
+      <div className="relative aspect-[4/3] bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 overflow-hidden">
         <img
           src={getImageUrl(gorra.imagen)}
           alt={`Gorra ${gorra.marca} ${gorra.color} - ${gorra.descripcion}`}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
           onError={handleImageError}
           loading="lazy"
         />
