@@ -1,7 +1,7 @@
 import React from 'react';
 import { AlertCircle } from 'lucide-react';
 import type { Gorra } from '../types';
-import { getImageUrl, handleImageError } from '../utils/imageUtils';
+import { getImageUrl, handleImageError, getImagePositionClass } from '../utils/imageUtils';
 
 interface ProductCardProps {
   gorra: Gorra;
@@ -17,7 +17,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ gorra }) => {
         <img
           src={getImageUrl(gorra.imagen)}
           alt={`Gorra ${gorra.marca} ${gorra.color} - ${gorra.descripcion}`}
-          className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
+          className={`w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 ${getImagePositionClass(gorra.imagen)}`}
           onError={handleImageError}
           loading="lazy"
         />
