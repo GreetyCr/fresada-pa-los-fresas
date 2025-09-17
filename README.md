@@ -165,3 +165,15 @@ Este proyecto está bajo la licencia MIT. Ver `LICENSE` para más detalles.
 ---
 
 **Fresada pa' los fresas** - Donde el estilo encuentra la calidad 🌹
+
+## 🚀 Enlaces Importantes
+
+- **🌐 Repositorio GitHub**: https://github.com/GreetyCr/fresada-pa-los-fresas
+- **📱 Demo en Vivo**: [Deploy en Vercel](https://fresada-pa-los-fresas.vercel.app)
+- **💻 Desarrollo Local**: `http://localhost:5173`
+
+## ⚡ Deploy Rápido
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/GreetyCr/fresada-pa-los-fresas)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/GreetyCr/fresada-pa-los-fresas)
