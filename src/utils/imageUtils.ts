@@ -29,7 +29,7 @@ export const getImagePositionClass = (imagePath: string): string => {
   if (filename.includes('clemont-beige') || 
       filename.includes('clemont-negro-blanco') ||
       filename.includes('clemont-negro-rojo-blanco')) {
-    return 'object-[center_22%]';
+    return 'object-[center_40%]';
   }
   
   // Imágenes que necesitan posicionamiento más hacia el centro-arriba
