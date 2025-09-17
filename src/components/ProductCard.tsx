@@ -53,13 +53,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ gorra }) => {
           Color: <span className="font-medium">{gorra.color}</span>
         </p>
         
-        <p className="text-gray-700 dark:text-gray-300 text-sm mb-3 line-clamp-2">
+        <p className="text-gray-700 dark:text-gray-300 text-sm">
           {gorra.descripcion}
         </p>
-        
-        <button className="w-full bg-brand-red hover:bg-red-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200">
-          Ver Detalles
-        </button>
       </div>
     </div>
   );
